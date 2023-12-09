@@ -6,23 +6,21 @@ const Sidebar = () => {
     {
       label: "Home",
       href: "/",
-      icon: BsHouseFill
+      icon: BsHouseFill,
     },
     {
       label: "Notifications",
       href: "/notifications",
-      icon: BsBellFill
+      icon: BsBellFill,
     },
     {
       label: "Profile",
       href: "/users/123",
-      icon: FaUser
-    }
+      icon: FaUser,
+    },
   ];
 
-  return (
-    <div></div>
-  );
-}
+  return <div></div>;
+};
 
 export default Sidebar;

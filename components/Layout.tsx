@@ -4,7 +4,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({children}) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="h-screen bg-black">
       <div className="container h-full mx-auto xl:px-30 max-w-6xl">
@@ -16,7 +16,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Layout;
