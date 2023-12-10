@@ -43,19 +43,61 @@ const Modal: React.FC<ModalProps> = ({
 
   return (
     <>
-      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-neutral-800 bg-opacity-70">
-        <div className="relative w-full lg:w-3/6 my-6 mx-auto lg:max-w-3xl h-full lg:h-auto">
+      <div
+        className="
+          justify-center
+          items-center
+          flex
+          overflow-x-hidden
+          overflow-y-auto
+          fixed
+          inset-0
+          z-50
+          outline-none
+          focus:outline-none
+          bg-neutral-800
+          bg-opacity-70
+        "
+      >
+        <div
+          className="
+            relative
+            w-full
+            lg:w-3/6
+            my-6
+            mx-auto
+            lg:max-w-3xl
+            h-full
+            lg:h-auto
+          "
+        >
           {/* for content */}
-          <div className="h-full lg:h-auto border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
+          <div
+            className="
+              h-full
+              lg:h-auto
+              border-0 
+              rounded-lg 
+              shadow-lg
+              relative
+              flex
+              flex-col
+              w-full
+              bg-black
+              outline-none
+              focus:outline-none
+            "
+          >
             {/* the header */}
-            <div className="
-            flex
-            items-center
-            justify-between
-            p-10
-            rounded-t">
-
-            </div>
+            <div
+              className="
+                flex
+                items-center
+                justify-between
+                p-10
+                rounded-t
+              "
+            ></div>
           </div>
         </div>
       </div>
