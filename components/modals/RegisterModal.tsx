@@ -25,13 +25,13 @@ const RegisterModal = () => {
         email,
         password,
         username,
-        name
+        name,
       });
 
       toast.success("Account created");
       signIn("credentials", {
         email,
-        password
+        password,
       });
 
       registerModal.onClose();
