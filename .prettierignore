@@ -51,3 +51,8 @@ next-env.d.ts
 
 # readme
 README.md
+
+# prisma
+.env
+/prisma/
+/prisma/scheme.prisma
