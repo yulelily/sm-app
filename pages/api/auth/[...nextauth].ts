@@ -20,17 +20,17 @@ export default NextAuth({
 
         const user = await prisma.user.findUnique({
           where: {
-            email: credentials.email
-          }
+            email: credentials.email,
+          },
         });
 
         if (!user || !user?.hashedPassword) {
           throw new Error("Invalid credentials");
         }
-        
+
         const isCorrectPassword = await bcrypt.compare(
           credentials.password,
-          user.hashedPassword
+          user.hashedPassword,
         );
 
         if (isCorrectPassword) {
@@ -38,15 +38,15 @@ export default NextAuth({
         }
 
         return user;
-      }
-    })
+      },
+    }),
   ],
   debug: process.env.NODE_ENC === "development",
   session: {
-    strategy: "jwt"
+    strategy: "jwt",
   },
   jwt: {
     secret: process.env.NEXTAUTH_JWT_SECRET,
   },
-  secret: process.env.NEXTAUTH_SECRET
+  secret: process.env.NEXTAUTH_SECRET,
 });

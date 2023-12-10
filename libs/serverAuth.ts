@@ -11,8 +11,8 @@ const serverAuth = async (req: NextApiRequest) => {
 
   const currentUser = await prisma.user.findUnique({
     where: {
-      email: session.user.email
-    }
+      email: session.user.email,
+    },
   });
 
   if (!currentUser) {
