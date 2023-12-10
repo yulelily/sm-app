@@ -40,15 +40,13 @@ const Sidebar = () => {
           items-end
         "
       >
-
-       <div
-        className="
+        <div
+          className="
           space-y-2
           lg:w-[230px]
         "
-       >
-
-         <SidebarLogo />
+        >
+          <SidebarLogo />
           {items.map((item) => (
             <SidebarItem
               key={item.href}

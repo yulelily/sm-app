@@ -40,7 +40,9 @@ const Button: React.FC<ButtonProps> = ({
         ${outline ? "border-white" : ""}
         ${outline ? "text-white" : ""}  
         `}
-    ></button>
+    >
+      {label}
+    </button>
   );
 };
 
