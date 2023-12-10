@@ -37,3 +37,17 @@ next-env.d.ts
 
 # vscode stuff
 .vscode/
+
+# config files
+*.config.js
+*.json
+
+# public directory/images
+/public/
+
+# html/css
+*.css
+*.html
+
+# readme
+README.md
