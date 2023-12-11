@@ -40,7 +40,9 @@ const useLike = ({ postId, userId }: { postId: string; userId?: string }) => {
       // to refresh the post itself
       mutateFetchedPost();
 
-      toast.success("Successfully liked!");
+      if (!hasLiked) {
+        toast.success("Successfully liked!");
+      }
     } catch (error) {
       toast.error("Something went wrong");
     }
