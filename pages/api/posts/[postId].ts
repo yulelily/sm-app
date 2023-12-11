@@ -24,13 +24,13 @@ export default async function handler(
         user: true,
         comments: {
           include: {
-            user: true
+            user: true,
           },
           orderBy: {
-            createdAt: "desc"
-          }
-        }
-      }
+            createdAt: "desc",
+          },
+        },
+      },
     });
 
     return res.status(200).json(post);

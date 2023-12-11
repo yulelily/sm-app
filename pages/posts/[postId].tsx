@@ -15,7 +15,7 @@ const PostView = () => {
       <div className="flex justify-center items-center h-full">
         <ClipLoader color="lightblue" size={80} />
       </div>
-    )
+    );
   }
 
   return (
@@ -25,6 +25,6 @@ const PostView = () => {
       <Form postId={postId as string} placeholder="Tweet your reply" />
     </>
   );
-}
+};
 
 export default PostView;
