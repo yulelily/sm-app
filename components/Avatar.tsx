@@ -36,11 +36,11 @@ const Avatar: React.FC<AvatarProps> = ({ userId, isLarge, hasBorder }) => {
         transition
         cursor-pointer
         relative
-      `}
+        flex-shrink-0`}
     >
       <Image
         fill
-        sizes="(max-width: 64px)"
+        sizes="64"
         style={{
           objectFit: "cover",
           borderRadius: "100%",
